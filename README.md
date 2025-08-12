@@ -9,40 +9,8 @@
 This is a small demo project that uses Apache Camel and Spring Boot to create a simple API gateway. The application exposes a REST endpoint that, when called, queries a public random joke API, processes its JSON response, and returns a simplified, clean version to the user.
 
 It's was made for learning the basic concepts of integration with Apache Camel in a modern Spring Boot environment.
-
-
-<strong>🚀 Core Concepts Demonstrated</strong>
----------------------------------------------
-
-
-This project was built to illustrate the following key concepts:
-
-Integrating <strong>Apache Camel </strong> into a <strong>Spring Boot </strong> application.
-
-Defining a REST endpoint using the <strong>Camel REST DSL.</strong>
-
-Calling an external API with the camel-http component.
-
-Data transformation (<strong>Unmarshalling</strong) from JSON to a Java object (<strong>POJO</strong>) with camel-jackson.
-
-Manipulating the in-flight message (Message Body).
-
-Code organization into packages (model, route, config).
-
-
-
-<strong>🛠️ Tech Stack</strong>
-------------------------------
-
-
-Java 21
-
-Spring Boot 3.2.5
-
-Apache Camel 4.6.0
-
-Maven as a build tool
-
+</br>
+</br>
 
 🛠️ Tools & Technologies
 -----------------------
@@ -61,6 +29,46 @@ Maven as a build tool
 <a href="#"><img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?logo=springboot&logoColor=fff" alt="Spring Boot"></a>
 <a href="#"><img src="https://img.shields.io/badge/Apache-D22128?logo=apache&logoColor=fff&style=flat" alt="Apache"></a>
 </p>
+</br>
+
+<strong>🚀 Core Concepts Demonstrated</strong>
+---------------------------------------------
+
+
+This project was built to illustrate the following key concepts:
+</br>
+</br>
+
+-> Integrating <strong>Apache Camel </strong> into a <strong>Spring Boot </strong> application.
+
+-> Defining a REST endpoint using the <strong>Camel REST DSL.</strong>
+
+-> Calling an external API with the camel-http component.
+
+-> Data transformation (<strong>Unmarshalling</strong>) from JSON to a Java object (<strong>POJO</strong>) with camel-jackson.
+
+-> Manipulating the in-flight message (Message Body).
+
+-> Code organization into packages (model, route, config).
+</br>
+</br>
+
+
+<strong>🛠️ Tech Stack</strong>
+------------------------------
+
+
+Java 21
+
+Spring Boot 3.2.5
+
+Apache Camel 4.6.0
+
+Maven as a build tool
+</br>
+</br>
+
+
 
 
 <strong>📋 Prerequisites</strong>
@@ -72,7 +80,8 @@ Before you begin, ensure you have the following installed:
 JDK 21 or higher
 
 Apache Maven 3.8+
-
+</br>
+</br>
 
 <strong>⚡ How to Run the Project</strong>
 -------------------------
@@ -98,7 +107,8 @@ mvn spring-boot:run
 
 
 This command will download dependencies and start the web server. You will see the Spring Boot banner in your terminal and a message confirming that the application has started on port 8080.
-
+</br>
+</br>
 
 
 <strong>🧪 How to Test the API</strong>
@@ -124,19 +134,22 @@ In both cases, the expected result is a string of text containing a random joke,
 What's the difference between a hippo and a zippo? ... One is really heavy, the other is a little lighter.
 
 This one really <strong>sets me on fire</strong>, anyway.....
-
+</br>
+</br>
 
 
 <strong>🎓 Lessons Learned & Troubleshooting</strong>
 ----------------------------------------------------
 
 
-During the creation of this project, i've faced and solved several common real-world problems, which serve as an important lesson:
+During the creation of this project, i've faced and solved different problems, and they all served as an important lesson:
 
 Version Incompatibility: an incompatible version of Camel being used with the chosen Spring Boot version.
 
 BOM to the Rescue: Introduced a <strong>Camel BOM (Bill of Materials)</strong> in the <dependencyManagement> section of the pom.xml, allowing it to manage all Camel library versions consistently.
 
-Bean Conflict: A <strong>BeanDefinitionOverrideException</strong> error occurred because both Camel's auto-configuration and our manual configuration were trying to create the same bean. This was solved by excluding the auto-configuration (ServletMappingAutoConfiguration.class) in the @SpringBootApplication annotation.
+Bean Conflict: A <strong>BeanDefinitionOverrideException</strong> error occurred because both Camel's auto-configuration and manual configuration were trying to create the same bean. This was solved by excluding the auto-configuration (ServletMappingAutoConfiguration.class) in the @SpringBootApplication annotation.
 
 This process demonstrates the importance of proper dependency management and understanding Spring Boot's auto-configuration mechanisms.
+</br>
+</br>
