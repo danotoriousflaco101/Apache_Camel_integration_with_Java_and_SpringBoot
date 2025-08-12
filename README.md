@@ -87,24 +87,29 @@ Apache Maven 3.8+
 -------------------------
 
 
-Follow these simple steps to run the application locally.
+Follow these simple steps to run the application locally:
+</br>
 
 Clone the repository:
 
 <strong>Bash</strong>
 
-git clone https://github.com/danotoriousflaco101/Learning_Apache_Camel_integration_with_Java_and_SpringBoot.git
+git clone https://github.com/danotoriousflaco101/Apache_Camel_integration_with_Java_and_SpringBoot
+</br>
+
 Navigate into the project directory:
 
 <strong>Bash</strong>
 
 cd Learning_Apache_Camel_integration_with_Java_and_SpringBoot
+</br>
+
 Run the application using Maven:
 
 <strong>Bash</strong>
 
 mvn spring-boot:run
-
+</br>
 
 This command will download dependencies and start the web server. You will see the Spring Boot banner in your terminal and a message confirming that the application has started on port 8080.
 </br>
