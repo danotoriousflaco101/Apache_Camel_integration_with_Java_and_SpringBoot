@@ -153,3 +153,7 @@ Bean Conflict: A <strong>BeanDefinitionOverrideException</strong> error occurred
 This process demonstrates the importance of proper dependency management and understanding Spring Boot's auto-configuration mechanisms.
 </br>
 </br>
+
+<img src="https://pbs.twimg.com/media/EOFn0COX4AAj4oA.jpg" alt="SmileCamel Logo" width="2000"/>
+</br>
+</br>
